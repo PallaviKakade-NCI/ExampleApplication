@@ -22,7 +22,7 @@ jobs:
       - checkout
       - run: 
           name: update-npm
-          command: 'npm install -g npm@9.4.2'
+          command: 'npm install -g npm@8.1.4'
       - restore_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
       - run:
